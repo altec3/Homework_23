@@ -16,5 +16,5 @@ class QueriesResource(Resource):
         response = index_service.get_result(payload=payload)
 
         if response:
-            return jsonify(response), 200
+            return jsonify(response)
         return None, 400
